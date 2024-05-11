@@ -1,0 +1,1597 @@
+<script language="javascript">function onload1(){lock_xs();move3('qjqxdm');}</script>
+<script type="text/javascript">
+function mt(el){
+   el.bgColor="#FFFFFF";
+    }
+function mv(el){
+   el.bgColor="#FF9F60";
+   el.title='单击选择编辑';
+}
+    function onkeydown1(t1,t2,evt){
+    if (navigator.userAgent.indexOf(" MSIE ")>0){
+    with(window.event)if(srcElement.type=="text"&&keyCode==38)move2(t1);
+    with(window.event)if(srcElement.type=="text"&&keyCode==40)keyCode=move5(t2);
+    with(window.event)if(srcElement.type=="text"&&keyCode==13)keyCode=move5(t2);
+    }else{
+    if (evt){
+        e=evt;
+    }else{
+        e=window.event;
+    }
+    switch (e.which){
+                case 38:
+                     move2(t1);
+                     break;
+                case 40:
+                     move5(t2);
+                     break;
+                case 13:
+                     move5(t2);
+                     break;
+         }
+    }
+    }
+　　
+    function check(a) {
+    var rbltable = document.getElementById(a);
+    var rbs = rbltable.getElementsByTagName("INPUT");
+    var result = 0;
+    for (var i = 0; i < rbs.length; i++) {
+        if (rbs[i].checked) {
+            result = rbs[i].value;
+            break;
+        }
+    }
+    return result;
+    }
+　　
+    function xxxx(a,b,c,d,e,f,g){
+       div1.style.visibility = "hidden";
+       div1.style.display = "none";
+       div_xzdm.style.visibility = "visible";
+       div_xzdm.style.display = "block";
+       form1.pa.value=a;
+       form1.pb.value=b;
+       form1.pc.value=c;
+       form1.pd.value=d;
+       form1.pe.value=e;
+       form1.pf.value=f;
+       form1.pg.value=g;
+       form1.xp_ipbz.value="1";
+       form1.xqndbz.value="";
+       r_xzdm.location="/mobile/xxxx.aspx";
+    }
+    function xzxdm(a,b,c,d,e){
+       div1.style.visibility = "hidden";
+       div1.style.display = "none";
+       div_xzdm.style.visibility = "visible";
+       div_xzdm.style.display = "block";
+       div_xzdm.style.height = document.body.scrollHeight;
+             form1.xp_pmc.value=a;
+             form1.xp_pval.value=b;
+             form1.xp_plx.value=c;
+             form1.xp_pzd.value=d;
+             form1.xp_pkm.value=e;
+             form1.xp_pjxjdm.value="";
+             form1.xp_pjxjdm2.value="";
+             form1.xp_ipbz.value="1";
+       form1.scrtop.value=document.body.scrollTop;
+       r_xzdm.location="/mobile/xzdm.aspx";
+    }
+    function a1(){
+    lock_xs();
+        }
+function tchang1(a){
+    pzd2=move4(a+"dm");
+    if (pzd2==""){pzd2=a;}
+    parent.r_3_4.form1.pmc.value=a;
+    var pb=document.getElementById(a);
+    parent.r_3_4.form1.pval.value=pb.value;
+    parent.r_3_4.form1.plx.value="sy_3";
+    parent.r_3_4.form1.pzd.value=pzd2;
+    parent.r_3_4.form1.xzbz.value="1";
+    parent.parent.r_3_4.form1.submit();
+}
+    function hj(){
+            try {
+                 var date1=new Date(form1.qjsj.value.replace(/-/g, "/"));
+    		       var date2=new Date(form1.nhxsj.value.replace(/-/g, "/"));
+                 if (! isNaN(Math.ceil((date2.getDate()-date1.getDate())))){
+                    form1.qjts.value=parseInt((date2-date1)/1000/60/60/24)+1;
+                 }else{
+                    form1.qjts.value="";
+                 }
+            }catch(err){
+                 form1.qjts.value="";
+            }
+    }
+    function hjs(){
+        p_nhxsj=getvalue("nhxsj");
+        if (isNaN(p_nhxsj)){p_nhxsj=0;}
+        p_qjsj=getvalue("qjsj");
+        if (isNaN(p_qjsj)){p_qjsj=0;}
+        form1.qjts.value=DATEDIFF([DAY],p_qjsj/1,p_nhxsj/1)+1;
+        p_qjts=getvalue("qjts");
+        if (isNaN(p_qjts)){p_qjts=0;}
+        form1.qjts.value=(p_qjts/1+Math.abs(p_qjts/1))/2;
+    }
+function rxzdm(a,b,c,d,e,f,g){
+   pa=a+"dm";
+   if (a=="hjqk"){pa="xfjf";}
+   if (a=="dwmc"){pa="dwdm";}
+   if (a=="sshm"){pa="sshm";}
+   if (a=="yfsshm"){pa="yfsshm";}
+   if (a=="term"){pa="term";}
+   if (a=="xbjhm"){pa="xbjhm";}
+   if (a=="sjdwmc"){pa="sjdwdm";}
+   document.getElementById(a).value=e;
+   document.getElementById(pa).value=f;
+      if ((",dwdm,byqxfldm,dwszddm,sjdwszddm,jylbdm,wjylbdm,dwlsbmdm,sqbzxmdm,").indexOf(","+pa.toLowerCase()+",")>-1) {
+         parent.parent.r_3_4.form1.pmc.value=a;
+         parent.parent.r_3_4.form1.pval.value=f;
+         parent.parent.r_3_4.form1.plx.value="sy_3";
+         parent.parent.r_3_4.form1.pzd.value=a;
+         parent.parent.r_3_4.form1.st_nd.value=form1.st_nd.value;
+         parent.parent.r_3_4.form1.xh.value=form1.xh.value;
+         parent.parent.r_3_4.form1.xzbz.value="1";
+         parent.parent.r_3_4.form1.submit();    
+      }
+      if (form1.tkey.value==pa) {
+         form1.pkey.value = f;
+         form1.xzbz.value="1";
+         form1.submit();    
+      }
+   move3(d);
+   hj();
+}
+function lock_xs(){
+   var pa=document.getElementById("MyDataGrid");
+   if (!(pa)) {
+       document.getElementById("xs_jj").innerHTML = "";
+   } else {
+      if (form1.jjzt.value == "") {
+          y_ck(2);
+      } else {
+         y_ck(1);     
+      }
+   }
+ if (form1.lszt.value == "") {
+     var pa = document.getElementById("ck_MyDataGrid")
+     pa.style.display = "block";
+     var pa = document.getElementById("xs_MyDataGrid")
+     pa.style.display = "none";
+ }else{
+     var pa = document.getElementById("ck_MyDataGrid")
+     pa.style.display = "none";
+     var pa = document.getElementById("xs_MyDataGrid")
+     pa.style.display = "block";
+}
+   div_xzdm.style.visibility = "hidden";
+   div_xzdm.style.display = "none";
+    div_fh.style.visibility = "hidden";
+    div_fh.style.display = "none";
+   switch (form1.smbz.value){
+          case "1":
+               div1.style.visibility = "hidden";
+               div1.style.display = "none";
+               div0.style.visibility = "visible";
+               div0.style.display = "block";
+               break;
+          case "2":
+               div0.style.visibility = "hidden";
+               div0.style.display = "none";
+               div1.style.visibility = "visible";
+               div1.style.display = "block";
+               break;
+   }
+   lock_xs2();
+}
+function dataxs() {
+    var pa = document.getElementById("ck_MyDataGrid")
+    pa.style.display = "none";
+    var pa = document.getElementById("xs_MyDataGrid")
+    pa.style.display = "block";
+    form1.lszt.value = "1";
+    form1.xzbz.value = "s";
+    form1.submit();
+}
+function y_ck(a) {
+    if (a == "1") {
+        document.getElementById("xs_jj").innerHTML = '<br/><a onclick="y_ck(2)"><img alt="" style="border:0;border-collapse:collapse;height:30" src="/imagesal/jian.gif"/></a>';
+        form1.jjzt.value = "1";
+    } else {
+        document.getElementById("xs_jj").innerHTML = '<br/><a onclick="y_ck(1)"><img alt="" style="border:0;border-collapse:collapse;height:30" src="/imagesal/jia.gif"/></a>';
+        form1.jjzt.value = "";
+    }
+    var pi = 1;
+    while (pi >= 1) {
+        var pb = document.getElementById("dt_" + pi)
+        if (pb) {
+            if (a == "1") {
+                pb.style.display = "block";
+            } else {
+                pb.style.display = "none";
+            }
+        } else {
+            break;
+        }
+        pi = pi + 1;
+    }
+}
+function xzbc(){
+    if (form1.bczt.value == "") {
+        showtime();
+        document.getElementById("xs_xzbc").innerHTML = '<a style="cursor:pointer;color:#FF6600" onclick="xzbc()">>>取消备查模式</a>';
+        stzp('Image1')
+        form1.bczt.value = "1";
+        p1 = form1.pzd.value + ",";
+        while (p1 > "") {
+               p2 = p1.substr(0, p1.indexOf(","));
+               p1 = p1.substring(p1.indexOf(",") + 1);
+               var pa = document.getElementById(p2 + "_bk");
+               if (pa) {
+                     pa.style.display = "none";
+               }
+               var pa = document.getElementById(p2 + "_xs2");
+               if (pa) {
+                  if (("," + form1.pzd_lock5.value).indexOf("," + p2 + ",") == -1) {
+                     pa.style.display = "none";
+                  }else{
+                     var pa = document.getElementById(p2 + "_xs");
+                     var pb = document.getElementById(p2 + "_sb");
+                     if (pb){
+                         pb.innerHTML=pb.innerHTML.replace("申报值",pa.innerText);
+                         pb.innerHTML=pb.innerHTML.replace("状态值",pa.innerText);
+                     }
+                     var pa = document.getElementById(p2 + "_xs1");
+                     if (pa) {
+                         pa.style.display = "none";
+                     }
+                     var pa = document.getElementById(p2 + "_sm");
+                     if (pa) {
+                         pa.style.display = "none";
+                     }
+                     var pa = document.getElementById(p2 + "_sm0");
+                     if (pa) {
+                         pa.style.display = "none";
+                     }
+                  }
+               }
+        }
+        if (form1.lszt.value==""){
+            var pa = document.getElementById("ck_MyDataGrid");
+        }else{
+            var pa = document.getElementById("xs_MyDataGrid");
+        }
+        if (pa){
+           pa.style.display = "none";
+        }
+        if (form1.colordm.value != "") {
+            if (form1.sqpzck.checked) {
+               document.body.bgColor = form1.colordm.value;
+            }
+        }
+    } else {
+        document.getElementById("xs_xzbc").innerHTML = '<a style="cursor:pointer;color:#FF6600" onclick="xzbc()">>>备查模式</a>';
+        form1.bczt.value = "";
+        if (form1.lszt.value==""){
+            var pa = document.getElementById("ck_MyDataGrid");
+        }else{
+            var pa = document.getElementById("xs_MyDataGrid");
+        }
+        if (pa){
+           pa.style.display = "block";
+        }
+        if (form1.colordm.value != "") {
+           document.body.bgColor = "";
+        }
+        form1.xzbz.value="2";
+        form1.submit();
+    }
+}
+function ckfun(a){
+    if ((","+form1.pzd_lock.value).indexOf(","+a+",")>-1){document.getElementById(a).checked=false;}
+}
+function xzst(a,b){
+    form1.pczsj.value="";
+    form1.pkey.value=a;
+    form1.pkey4.value=b;
+    form1.xzbz.value="3";
+    form1.submit();
+}
+function ckxyb(){
+div0.style.visibility = "hidden";
+div0.style.display = "none";
+div1.style.visibility = "visible";
+div1.style.display = "block";
+if (parent.top_1) {
+   parent.document.getElementById("r_3_3").style.height=document.body.scrollHeight+30;
+}
+form1.smbz.value="2";
+document.getElementById("top0").focus();
+}
+function cksyb(){
+div1.style.visibility = "hidden";
+div1.style.display = "none";
+div0.style.visibility = "visible";
+div0.style.display = "block";
+if (parent.top_1) {
+   parent.document.getElementById("r_3_3").style.height=document.body.scrollHeight+30;
+}
+form1.smbz.value="1";
+document.getElementById("top0").focus();
+}
+function bcxs(){
+   form1.pczsj.value="";
+   bc_xs.innerHTML='<font color="#FF0000">正在保存...</font>';
+   scsd("")
+}
+function xztx(){
+       div1.style.visibility = "hidden";
+       div1.style.display = "none";
+       div_xzdm.style.visibility = "visible";
+       div_xzdm.style.display = "block";
+       r_xzdm.location="/mobile/xztx.aspx?km=st_xsqj";
+}
+function xj(){
+   form1.pczsj.value="";
+   form1.xzbz.value="x";
+   form1.submit();
+}
+function xzxq(){
+       div1.style.visibility = "hidden";
+       div1.style.display = "none";
+       div_xzdm.style.visibility = "visible";
+       div_xzdm.style.display = "block";
+       div_xzdm.style.height = document.body.scrollHeight;
+             form1.xp_pmc.value="st_xq";
+             form1.xp_pval.value="";
+             form1.xp_plx.value="";
+             form1.xp_pzd.value="";
+             form1.xp_pkm.value="";
+             form1.xp_pjxjdm.value="";
+             form1.xp_ipbz.value="q";
+             form1.qx_r.value="";
+             form1.qx2_r.value="";
+       r_xzdm.location="/mobile/xzdm.aspx";
+    }
+function fhsy() {
+   if (parent.top_1) {
+       location = "/mobile/first.aspx";
+   } else {
+       location = "/mobile/default.aspx";
+   }
+}
+</script>
+<script type="text/javascript" charset="gb2312" src="/aolan.js?v=22"></script>
+<html>
+<head>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+<meta name="MobileOptimized" content="320"/>
+<title>学生请假</title>
+<style type="text/css">
+.A1          { padding: 0;color: #0000FF; background-color: #FFFFFF;font-size: 9pt;
+               height: 18; font-family: SimSun; text-align:center }
+.C1          { font-family: 宋体; font-size: 16px; color: #008000}
+.TD          { font-family: 宋体; font-size: 16px; color: #000080}
+.TDB         { width:350}
+.TDC         { height:35;text-align:right;white-space:nowrap;letter-spacing:normal}
+.TDD         { color: #0000FF;height:35 }
+.TDP         { color: #000000;height:35 }
+.TTS         { color: #FF9980 }
+.TD1         { border:1px solid #FFFFFF; font-family: 宋体; font-size: 18px;color: #0000FF; border: 1px solid #CCCCCC; height:28; padding-top:4px  }
+.TD2         { font-family: 宋体; color: #0000FF; font-size: 18px; border: 1px solid #000000; overflow:auto   }
+.TD3         { border:1px solid #FFFFFF; font-family: 宋体; font-size: 18px; padding-left:0; padding-right:0; padding-top:1; padding-bottom:1; background-color:#FFFF00; color:#0000FF; height:28  }
+.xq            { color: #FFFF00; background-color: #006FD2;font-size: 18px;height: 28; font-family: Arial; font-weight: bold}
+td           { font-family: 宋体; font-size: 18px;height:28 }
+a:visited    { color: #FF0000; text-decoration: none }
+a:link       { color: #0000FF }
+</style>
+<style type="text/css">A {TEXT-DECORATION: none;cursor: pointer;color: #0000FF}
+table        { font-size: 18px; font-family: 宋体}
+h1           { font-size: 18px; font-family: 宋体}
+</style>
+<base target="_self"/>
+</head>
+<body style="margin-top:2;  margin-left:2;padding:0" onload="onload1()">
+<div style="display:none;border:1px solid #000000;background-color:#FFFFCC;font-size:14px;position:absolute;padding:2;" id="altlayer"></div>
+<script  type="text/javascript">
+document.body.onmousemove=quickalt;
+document.body.onmouseover=getalt;
+document.body.onmouseout=restorealt;
+var tempalt='';
+function getalt(e){
+    e=window.event||e;
+    var srcElement = e.srcElement || e.target;
+	if(srcElement.alt && (srcElement.alt!='' || (srcElement.alt=='' && tempalt!='')))
+	{
+		altlayer.style.left=e.x||e.pageX;
+		altlayer.style.top=(e.y||e.pageY)+document.body.scrollTop-document.body.clientTop+15;
+		altlayer.style.display='';
+		tempalt=srcElement.alt;
+		tempbg=srcElement.altbg;
+		tempcolor=srcElement.altcolor;
+		tempborder=srcElement.altborder;
+		srcElement.alt='';
+		altlayer.innerText=tempalt;
+		altlayer.textContent=tempalt;
+		if (typeof(tempbg)!="undefined"){altlayer.style.background=tempbg}else{altlayer.style.background="#FFFFCC"}
+		if (typeof(tempcolor)!="undefined"){altlayer.style.color=tempcolor}else{altlayer.style.color=tempcolor="#000000"}
+		if (typeof(tempborder)!="undefined"){altlayer.style.border='1px solid '+tempborder;}else{altlayer.style.border='1px solid #000000';}
+	}
+}
+function quickalt(e)
+{
+    e=window.event||e;
+	if(altlayer.style.display=='')
+	{
+		altlayer.style.left=e.x||e.pageX;
+		altlayer.style.top=(e.y||e.pageY)+document.body.scrollTop-document.body.clientTop+15;
+	}
+}
+function restorealt(e)
+{
+    e=window.event||e;
+    var srcElement = e.srcElement || e.target;
+	srcElement.alt=tempalt;
+	tempalt='';
+	altlayer.style.display='none';
+}
+</script>
+<form name="form1" method="post" action="./r_3_3_st_xsqj.aspx" id="form1" enctype="multipart/form-data">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<script type="text/javascript">
+<!--
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="56445155" />
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<div id="divp" style="height:0">
+   <input type="text" id="top0" readonly="readonly" size="0" maxlength="0" style="border:0;border-collapse:collapse;width:0;height:0;padding:0"/>
+</div>
+<br/>
+<div id="div0" style="text-align:center; visibility:hidden; display:none">
+	<table style="border:0;border-collapse:collapse;width:100%">
+<tr><td>
+<p align="center" class="MsoNormal" style="text-align: center; line-height: 16pt; text-indent: 0pt; margin-bottom: 0pt; margin-left: 0pt; ms-text-autospace: ideograph-numeric; mso-char-indent-count: 0.0000; mso-line-height-rule: exactly; mso-para-margin-left: 0.0000gd; mso-pagination: widow-orphan;"><span style='font-family: 宋体; font-size: 14pt; mso-spacerun: "yes";'>学生请假流程</span><span style='font-family: 宋体; font-size: 14pt; mso-spacerun: "yes";'><!--?xml:namespace prefix = o /--><o:p></o:p></span></p>
+<p class="MsoBodyText" style="line-height: 14pt; text-indent: 28pt; margin-top: 0pt; margin-bottom: 0pt; ms-text-autospace: ideograph-numeric; mso-char-indent-count: 2.0000; mso-line-height-rule: exactly; mso-pagination: widow-orphan;"><span style="font-family: 宋体; font-size: 14pt;">1、学生</span><span style="font-family: 宋体; font-size: 14pt;">在</span><span style="font-family: 宋体; font-size: 14pt;">发起请假申请</span><span style="font-family: 宋体; font-size: 14pt;">之前，需主动向班主任汇报，经同意后</span><span style="font-family: 宋体; font-size: 14pt;">，</span><span style="font-family: 宋体; font-size: 14pt;">再</span><span style="font-family: 宋体; font-size: 14pt;">如实填写，提交申请后，班主任的手机立即收到</span><span style="font-family: 宋体; font-size: 14pt;">微</span><span style="font-family: 宋体; font-size: 14pt;">信提醒。</span><span style="font-family: 宋体; font-size: 14pt;"><o:p></o:p></span></p>
+<p class="MsoBodyText" style="line-height: 14pt; text-indent: 28pt; margin-top: 0pt; margin-bottom: 0pt; ms-text-autospace: ideograph-numeric; mso-char-indent-count: 2.0000; mso-line-height-rule: exactly; mso-pagination: widow-orphan;"><span style="font-family: 宋体; font-size: 14pt;">2、请假</span><span style="font-family: 宋体; font-size: 14pt;">4</span><span style="font-family: 宋体; font-size: 14pt;"><font face="宋体">天以内由班主任批准，请假</font><font face="宋体">7天以内由系部学管主任</font></span><span style="font-family: 宋体; font-size: 14pt;">加</span><span style="font-family: 宋体; font-size: 14pt;"><font face="宋体">批，请假</font><font face="宋体">15天以内由学工处</font></span><span style="font-family: 宋体; font-size: 14pt;">加</span><span style="font-family: 宋体; font-size: 14pt;"><font face="宋体">批，超过</font><font face="宋体">15天由学工处请示分管校长后审批。</font></span></p>
+<p class="MsoBodyText" style="line-height: 14pt; text-indent: 28pt; margin-top: 0pt; margin-bottom: 0pt; ms-text-autospace: ideograph-numeric; mso-char-indent-count: 2.0000; mso-line-height-rule: exactly; mso-pagination: widow-orphan;"><span style="text-indent: 28pt; font-family: 宋体; font-size: 14pt;">3</span><span style="text-indent: 28pt; font-family: 宋体; font-size: 14pt;"><font face="宋体">、如学生跨周末请假</font><font face="宋体">4天（周五、周末和下周一），填报请假时“请假事由”选择“</font></span><b style="text-indent: 28pt; font-size: 9pt;"><span style="font-family: 宋体; font-size: 14pt;"><font face="宋体">跨周末</font><font face="宋体">4天</font></span></b><span style="text-indent: 28pt; font-family: 宋体; font-size: 14pt;">”，此请假由班主任审批。</span></p>
+<p class="MsoBodyText" style="line-height: 14pt; text-indent: 28pt; margin-top: 0pt; margin-bottom: 0pt; ms-text-autospace: ideograph-numeric; mso-char-indent-count: 2.0000; mso-line-height-rule: exactly; mso-pagination: widow-orphan;"><span style="text-indent: 28pt; font-family: 宋体; font-size: 14pt;">4、凡是涉及考勤的地方都得提前请假，如周日晚自习、学生会人员值班等，否则影响考勤。</span></p>
+<p class="MsoBodyText" style="line-height: 14pt; text-indent: 28pt; margin-top: 0pt; margin-bottom: 0pt; ms-text-autospace: ideograph-numeric; mso-char-indent-count: 2.0000; mso-line-height-rule: exactly; mso-pagination: widow-orphan;"><span style="text-indent: 28pt; font-family: 宋体; font-size: 14pt;">5、</span><span style="text-indent: 28pt; font-family: 宋体; font-size: 14pt;">请假外出校园，必须上传家长同意书，出校</span><b style="text-indent: 28pt; font-size: 9pt;"><span style="font-family: 宋体; font-size: 14pt;">具体时间</span></b><span style="text-indent: 28pt; font-family: 宋体; font-size: 14pt;">如实填写，否则影响门禁识别。</span></p>
+<p class="MsoBodyText" style="line-height: 14pt; text-indent: 28pt; margin-top: 0pt; margin-bottom: 0pt; ms-text-autospace: ideograph-numeric; mso-char-indent-count: 2.0000; mso-line-height-rule: exactly; mso-pagination: widow-orphan;"><span style="text-indent: 28pt; font-family: 宋体; font-size: 14pt;">6、</span><span style="text-indent: 28pt; font-family: 宋体; font-size: 14pt;">其他有关规定按学生手册上要求执行。</span></p>
+<br/>
+<br/>
+</td></tr>
+<tr><td style="vertical-align:top">
+    <table style="border:0;border-collapse:collapse">
+	    <tr><td>
+         附件:
+      </td></tr>
+      <tr><td>
+        <a style="cursor: pointer" onclick="downs('%e5%ad%a6%e7%94%9f%e8%af%b7%e5%81%87%e5%ae%b6%e9%95%bf%e5%90%8c%e6%84%8f%e4%b9%a6%e6%a8%a1%e6%9d%bf.docx')">学生请假家长同意书模板.docx</a>
+      </td></tr>
+    </table>
+</td></tr>
+<tr><td style="text-align:center"><img alt="" onclick="ckxyb()" src="/imagesal/xyb.gif"/><br></td></tr>
+</table>
+</div>
+<div id="div1" style="text-align:center; visibility:hidden; display:none">
+<table style="width:100%;border:0;border-collapse:collapse;padding:0">
+     <tr>
+       <td>
+            
+            <a style="cursor:pointer;color:#FF6600" onclick="xzxq()">>>学期-<span id="stxqxs">2023-2024-2</span></a>
+       </td>
+       <td id="xs_xzbc">
+            <a style="cursor:pointer;color:#FF6600" onclick="xzbc()">>>备查模式</a>
+       </td>
+     </tr>
+   <tr>
+     <td colspan="2">
+ <table style="border:0;border-collapse:collapse">
+ <tr id="ck_MyDataGrid">
+ <td colspan="2">
+ <a style="cursor:pointer;color:#FF6600"" onclick="dataxs()">>>点击显示历史记录</a>
+ </td>
+ </tr>
+ <tr id="xs_MyDataGrid">
+<td style="width:40;text-align:center;vertical-align:top" class="TDP" id="xs_jj"><br/><a onclick="y_ck(1)"><img alt="" style="border:0;border-collapse:collapse;height:30" src="/imagesal/jia.gif"/></a>
+</td>
+ <td style="vertical-align:top">
+ <table cellspacing="0" cellpadding="3" rules="all" bordercolor="#006FD2" border="1" id="MyDataGrid" style="border-color:#006FD2;border-width:1px;border-style:Solid;border-collapse:collapse;">
+	<tr style="background-color:#AAAADD;">
+		<td nowrap="nowrap">请假时间</td>
+	</tr><tr id="dt_0" onmouseout="mt(this)" onmouseover="mv(this)" onclick="xzst(&#39;2024-04-19&#39;,&#39;&#39;)">
+		<td nowrap="nowrap">
+              <span>2024-04-19</span>
+                </td>
+	</tr><tr id="dt_1" onmouseout="mt(this)" onmouseover="mv(this)" onclick="xzst(&#39;2024-04-13&#39;,&#39;&#39;)">
+		<td nowrap="nowrap">
+              <span>2024-04-13</span>
+                </td>
+	</tr><tr id="dt_2" onmouseout="mt(this)" onmouseover="mv(this)" onclick="xzst(&#39;2024-03-29&#39;,&#39;&#39;)">
+		<td nowrap="nowrap">
+              <span>2024-03-29</span>
+                </td>
+	</tr><tr id="dt_3" onmouseout="mt(this)" onmouseover="mv(this)" onclick="xzst(&#39;2024-03-22&#39;,&#39;&#39;)">
+		<td nowrap="nowrap">
+              <span>2024-03-22</span>
+                </td>
+	</tr><tr id="dt_4" onmouseout="mt(this)" onmouseover="mv(this)" onclick="xzst(&#39;2024-03-15&#39;,&#39;&#39;)">
+		<td nowrap="nowrap">
+              <span>2024-03-15</span>
+                </td>
+	</tr><tr id="dt_5" onmouseout="mt(this)" onmouseover="mv(this)" onclick="xzst(&#39;2024-03-08&#39;,&#39;&#39;)">
+		<td nowrap="nowrap">
+              <span>2024-03-08</span>
+                </td>
+	</tr><tr id="dt_6" onmouseout="mt(this)" onmouseover="mv(this)" onclick="xzst(&#39;2024-03-01&#39;,&#39;&#39;)">
+		<td nowrap="nowrap">
+              <span>2024-03-01</span>
+                </td>
+	</tr>
+</table>
+ </td>
+ </tr>
+ </table>
+ <table style="width:100%">
+  <tr>
+  <th style="padding:0; font-family: 宋体; font-size: 20px; color:#009900">
+  <div id="near"></div>
+  </th>
+  </tr>
+ </table>
+<table border="1" style="border-collapse: collapse;padding:2" bordercolor="#999999">
+<tr>
+  <td style="text-align:center;font-weight:bold" class="TDP">学生请假</td>
+</tr>
+<tr>
+  <td align="center">
+    <img id="Image1" border="0" style="height:150px;display:none" />
+    <a onclick="stzp('Image1')" Style="cursor: pointer;color: #FF0000"><span id="stzp2">>>点击显示照片<<</span></a>
+  </td>
+</tr>
+  <tr id="qjqxdm_xs2">
+       <td class="TDB">
+       <table><tr id="qjqxdm_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="qjqxdm_xs" class="TDD">
+        <a style="cursor: pointer" onclick="xzxdm('qjqx','','','qjsj','QJQXDM')">
+请假去向</a></td>
+    </tr>
+    <tr>
+    <td id="qjqxdm_sb" class="TDC">
+    申报值:
+    </td>
+    <td id="qjqx_xs">
+    <input name="qjqx" type="text" id="qjqx" value="校外" maxlength="6" class="TD1" readonly="readonly" onclick="xzxdm(&#39;qjqx&#39;,&#39;&#39;,&#39;&#39;,&#39;qjsj&#39;,&#39;QJQXDM&#39;)" Onchange="tchang1(&#39;qjqx&#39;)" onkeydown="onkeydown1(&#39;qjqxdm&#39;,&#39;qjqxdm&#39;)" size="8" alt="点击打开代码字段选择窗口进行选择" />
+  <input name="qjqxdm" type="hidden" id="qjqxdm" value="1" />
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="qjsj_xs2">
+       <td class="TDB">
+       <table><tr id="qjsj_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="qjsj_xs">
+    <a ondblclick="fdate('qjsj')">请假时间</a></td>
+    </tr>
+    <tr>
+    <td style="text-align:right;white-space:nowrap;letter-spacing:normal" id="qjsj_sb" class="TDD">
+    <a onclick="fdate('qjsj')">申报值:</a>
+    </td>
+    <td>
+    <input name="qjsj" type="text" id="qjsj" size="12" class="TD1" onchange="hj()" maxlength="12" onkeydown="onkeydown1(&#39;qjqxdm&#39;,&#39;qjsj&#39;,event)" value="2024-4-19" />
+<span id="qjsj_sm0"><font color="#FF4646">(点击"申报值:")</font></span>
+       </td></tr>
+       <tr id="qjsj_sm"><td></td><td class="TTS">日期格式:2024-5-11
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="jtsj_time_xs2">
+       <td class="TDB">
+       <table><tr id="jtsj_time_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="jtsj_time_xs">
+    具体时间</td>
+    </tr>
+    <tr>
+    <td id="jtsj_time_sb" class="TDC">
+    申报值:
+    </td>
+    <td>
+       <select name="jtsj_time1" id="jtsj_time1" size="1" class="A1">
+	<option value="00">00</option>
+	<option value="01">01</option>
+	<option value="02">02</option>
+	<option value="03">03</option>
+	<option value="04">04</option>
+	<option value="05">05</option>
+	<option value="06">06</option>
+	<option value="07">07</option>
+	<option value="08">08</option>
+	<option value="09">09</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option selected="selected" value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+</select>:
+       <select name="jtsj_time2" id="jtsj_time2" size="1" class="A1">
+	<option selected="selected" value="00">00</option>
+	<option value="01">01</option>
+	<option value="02">02</option>
+	<option value="03">03</option>
+	<option value="04">04</option>
+	<option value="05">05</option>
+	<option value="06">06</option>
+	<option value="07">07</option>
+	<option value="08">08</option>
+	<option value="09">09</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+	<option value="32">32</option>
+	<option value="33">33</option>
+	<option value="34">34</option>
+	<option value="35">35</option>
+	<option value="36">36</option>
+	<option value="37">37</option>
+	<option value="38">38</option>
+	<option value="39">39</option>
+	<option value="40">40</option>
+	<option value="41">41</option>
+	<option value="42">42</option>
+	<option value="43">43</option>
+	<option value="44">44</option>
+	<option value="45">45</option>
+	<option value="46">46</option>
+	<option value="47">47</option>
+	<option value="48">48</option>
+	<option value="49">49</option>
+	<option value="50">50</option>
+	<option value="51">51</option>
+	<option value="52">52</option>
+	<option value="53">53</option>
+	<option value="54">54</option>
+	<option value="55">55</option>
+	<option value="56">56</option>
+	<option value="57">57</option>
+	<option value="58">58</option>
+	<option value="59">59</option>
+</select>
+  <input name="jtsj_time" type="hidden" id="jtsj_time" value="15:00" />
+       </td></tr>
+       <tr id="jtsj_time_sm"><td></td><td class="TTS">出校或回宿舍的学生填写
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="qjsydm_xs2">
+       <td class="TDB">
+       <table><tr id="qjsydm_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="qjsydm_xs" class="TDD">
+        <a style="cursor: pointer" onclick="xzxdm('qjsy','','','qjjtyy','QJSYDM')">
+请假事由</a></td>
+    </tr>
+    <tr>
+    <td id="qjsydm_sb" class="TDC">
+    申报值:
+    </td>
+    <td id="qjsy_xs">
+    <input name="qjsy" type="text" id="qjsy" value="事假" maxlength="20" class="TD1" readonly="readonly" onclick="xzxdm(&#39;qjsy&#39;,&#39;&#39;,&#39;&#39;,&#39;qjjtyy&#39;,&#39;QJSYDM&#39;)" Onchange="tchang1(&#39;qjsy&#39;)" onkeydown="onkeydown1(&#39;jtsj_time&#39;,&#39;qjsydm&#39;)" size="22" alt="点击打开代码字段选择窗口进行选择" />
+  <input name="qjsydm" type="hidden" id="qjsydm" value="02" />
+       </td></tr>
+       <tr id="qjsydm_sm"><td></td><td class="TTS">请提前与班主任沟通好
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="qjjtyy_xs2">
+       <td class="TDB">
+       <table><tr id="qjjtyy_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="qjjtyy_xs">
+    请假具体原因</td>
+    </tr>
+    <tr>
+    <td id="qjjtyy_sb" class="TDC">
+    申报值:
+    </td>
+    <td>
+    <textarea name="qjjtyy" id="qjjtyy" width="300" class="TD2" height="30px" textmode="MultiLine" rows="5" cols="35">出去</textarea>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="wcmddm_xs2">
+       <td class="TDB">
+       <table><tr id="wcmddm_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="wcmddm_xs" class="TDD">
+        <a style="cursor: pointer" onclick="xzxdm('wcmd','','','fjm','XZQHDM')">
+外出目的地</a></td>
+    </tr>
+    <tr>
+    <td id="wcmddm_sb" class="TDC">
+    申报值:
+    </td>
+    <td id="wcmd_xs">
+    <input name="wcmd" type="text" id="wcmd" value="江苏省南京市" maxlength="36" class="TD1" readonly="readonly" onclick="xzxdm(&#39;wcmd&#39;,&#39;&#39;,&#39;&#39;,&#39;fjm&#39;,&#39;XZQHDM&#39;)" Onchange="tchang1(&#39;wcmd&#39;)" onkeydown="onkeydown1(&#39;qjjtyy&#39;,&#39;wcmddm&#39;)" size="30" alt="点击打开代码字段选择窗口进行选择" />
+  <input name="wcmddm" type="hidden" id="wcmddm" value="320100" />
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="fjm_xs2">
+       <td class="TDB">
+       <table><tr id="fjm_xs1">
+    <td id="fjm_xs" colspan="2">
+    附件</td>
+    </tr>
+    <tr>
+    <td colspan="2" class="TTS">
+    <span id="fjxs" maintainstate="false" style="font-family: arial;font-size: 16px;color:green"><a  style="text-decoration: underline; font-style: italic" onclick="down2('230119131-mmexport1713498369060.jpg','2023-2024-2')" title="230119131-mmexport1713498369060.jpg">230119131-mmexport...</a> <img onclick="scfj('230119131-mmexport1713498369060.jpg','')" title="删除附件" border="0" src="..\..\imagesal\gif-0123.gif"><br></span>
+    <input name="File1" type="file" id="File1" style="width:265;height: 25;font-family: SimSun; font-size: 16px; border: 1px solid #DBDBDB; overflow:hidden" />
+    
+    <br>点增加记录时会同步上传
+    <input name="fjm" type="hidden" id="fjm" value="230119131-mmexport1713498369060.jpg" />
+       </td></tr>
+       <tr id="fjm_sm"><td colspan="2" class="TTS">上传证明材料
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck_00_bk">
+  <td style="text-align:center" colspan = "2" class="TDP">
+<b>请勾选以下当天需请假的课节</b>
+  </td>
+  </tr>
+  <tr id="ck_00_xs2">
+       <td class="TDB">
+       <table><tr id="ck_00_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck_00_xs">
+    <input name="ck_00" type="checkbox" id="ck_00" style="height: 24" value="ON" onclick="ckfun(&#39;ck_00&#39;)" />早自习</td>
+  <input name="ck_ck_00" type="hidden" id="ck_ck_00" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck_01_xs2">
+       <td class="TDB">
+       <table><tr id="ck_01_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck_01_xs">
+    <input name="ck_01" type="checkbox" id="ck_01" style="height: 24" value="ON" onclick="ckfun(&#39;ck_01&#39;)" />第一节课</td>
+  <input name="ck_ck_01" type="hidden" id="ck_ck_01" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck_02_xs2">
+       <td class="TDB">
+       <table><tr id="ck_02_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck_02_xs">
+    <input name="ck_02" type="checkbox" id="ck_02" style="height: 24" value="ON" onclick="ckfun(&#39;ck_02&#39;)" />第二节课</td>
+  <input name="ck_ck_02" type="hidden" id="ck_ck_02" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck_03_xs2">
+       <td class="TDB">
+       <table><tr id="ck_03_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck_03_xs">
+    <input name="ck_03" type="checkbox" id="ck_03" style="height: 24" value="ON" onclick="ckfun(&#39;ck_03&#39;)" />第三节课</td>
+  <input name="ck_ck_03" type="hidden" id="ck_ck_03" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck_04_xs2">
+       <td class="TDB">
+       <table><tr id="ck_04_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck_04_xs">
+    <input name="ck_04" type="checkbox" id="ck_04" style="height: 24" value="ON" onclick="ckfun(&#39;ck_04&#39;)" />第四节课</td>
+  <input name="ck_ck_04" type="hidden" id="ck_ck_04" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck_05_xs2">
+       <td class="TDB">
+       <table><tr id="ck_05_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck_05_xs">
+    <input name="ck_05" type="checkbox" id="ck_05" style="height: 24" value="ON" onclick="ckfun(&#39;ck_05&#39;)" />第五节课</td>
+  <input name="ck_ck_05" type="hidden" id="ck_ck_05" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck_06_xs2">
+       <td class="TDB">
+       <table><tr id="ck_06_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck_06_xs">
+    <input name="ck_06" type="checkbox" id="ck_06" style="height: 24" value="ON" onclick="ckfun(&#39;ck_06&#39;)" />第六节课</td>
+  <input name="ck_ck_06" type="hidden" id="ck_ck_06" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck_07_xs2">
+       <td class="TDB">
+       <table><tr id="ck_07_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck_07_xs">
+    <input name="ck_07" type="checkbox" id="ck_07" style="height: 24" value="ON" onclick="ckfun(&#39;ck_07&#39;)" />第七节课</td>
+  <input name="ck_ck_07" type="hidden" id="ck_ck_07" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck_08_xs2">
+       <td class="TDB">
+       <table><tr id="ck_08_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck_08_xs">
+    <input name="ck_08" type="checkbox" id="ck_08" style="height: 24" value="ON" onclick="ckfun(&#39;ck_08&#39;)" />第八节课</td>
+  <input name="ck_ck_08" type="hidden" id="ck_ck_08" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck_99_xs2">
+       <td class="TDB">
+       <table><tr id="ck_99_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck_99_xs">
+    <input name="ck_99" type="checkbox" id="ck_99" style="height: 24" value="ON" onclick="ckfun(&#39;ck_99&#39;)" />晚自习</td>
+  <input name="ck_ck_99" type="hidden" id="ck_ck_99" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck_bgq_xs2">
+       <td class="TDB">
+       <table><tr id="ck_bgq_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck_bgq_xs">
+    <input name="ck_bgq" type="checkbox" id="ck_bgq" style="height: 24" value="ON" onclick="ckfun(&#39;ck_bgq&#39;)" />不归寝</td>
+  <input name="ck_ck_bgq" type="hidden" id="ck_ck_bgq" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="nhxsj_xs2">
+       <td class="TDB">
+       <table><tr id="nhxsj_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="nhxsj_xs">
+    <a ondblclick="fdate('nhxsj')">拟回校时间</a></td>
+    </tr>
+    <tr>
+    <td style="text-align:right;white-space:nowrap;letter-spacing:normal" id="nhxsj_sb" class="TDD">
+    <a onclick="fdate('nhxsj')">申报值:</a>
+    </td>
+    <td>
+    <input name="nhxsj" type="text" id="nhxsj" size="12" class="TD1" onchange="hj()" maxlength="12" onkeydown="onkeydown1(&#39;ck_bgq&#39;,&#39;nhxsj&#39;,event)" value="2024-4-19" />
+<span id="nhxsj_sm0"><font color="#FF4646">(点击"申报值:")</font></span>
+       </td></tr>
+       <tr id="nhxsj_sm"><td></td><td class="TTS">日期格式:2024-5-11
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="hxjt_time_xs2">
+       <td class="TDB">
+       <table><tr id="hxjt_time_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="hxjt_time_xs">
+    回校具体时间</td>
+    </tr>
+    <tr>
+    <td id="hxjt_time_sb" class="TDC">
+    申报值:
+    </td>
+    <td>
+       <select name="hxjt_time1" id="hxjt_time1" size="1" class="A1">
+	<option value="00">00</option>
+	<option value="01">01</option>
+	<option value="02">02</option>
+	<option value="03">03</option>
+	<option value="04">04</option>
+	<option value="05">05</option>
+	<option value="06">06</option>
+	<option value="07">07</option>
+	<option value="08">08</option>
+	<option value="09">09</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option selected="selected" value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+</select>:
+       <select name="hxjt_time2" id="hxjt_time2" size="1" class="A1">
+	<option selected="selected" value="00">00</option>
+	<option value="01">01</option>
+	<option value="02">02</option>
+	<option value="03">03</option>
+	<option value="04">04</option>
+	<option value="05">05</option>
+	<option value="06">06</option>
+	<option value="07">07</option>
+	<option value="08">08</option>
+	<option value="09">09</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+	<option value="32">32</option>
+	<option value="33">33</option>
+	<option value="34">34</option>
+	<option value="35">35</option>
+	<option value="36">36</option>
+	<option value="37">37</option>
+	<option value="38">38</option>
+	<option value="39">39</option>
+	<option value="40">40</option>
+	<option value="41">41</option>
+	<option value="42">42</option>
+	<option value="43">43</option>
+	<option value="44">44</option>
+	<option value="45">45</option>
+	<option value="46">46</option>
+	<option value="47">47</option>
+	<option value="48">48</option>
+	<option value="49">49</option>
+	<option value="50">50</option>
+	<option value="51">51</option>
+	<option value="52">52</option>
+	<option value="53">53</option>
+	<option value="54">54</option>
+	<option value="55">55</option>
+	<option value="56">56</option>
+	<option value="57">57</option>
+	<option value="58">58</option>
+	<option value="59">59</option>
+</select>
+  <input name="hxjt_time" type="hidden" id="hxjt_time" value="19:00" />
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="qjts_xs2">
+       <td class="TDB">
+       <table><tr id="qjts_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="qjts_xs">
+    请假天数</td>
+    </tr>
+    <tr>
+    <td id="qjts_sb" class="TDC">
+    申报值:
+    </td>
+    <td>
+    <input name="qjts" type="text" id="qjts" readonly="readonly" size="6" class="TD3" maxlength="10" onkeydown="onkeydown1(&#39;hxjt_time&#39;,&#39;qjts&#39;,event)" value="1" />
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck2_00_bk">
+  <td style="text-align:center" colspan = "2" class="TDP">
+<b>请勾选以下回校当天需请假的课节</b>
+  </td>
+  </tr>
+  <tr id="ck2_00_xs2">
+       <td class="TDB">
+       <table><tr id="ck2_00_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck2_00_xs">
+    <input name="ck2_00" type="checkbox" id="ck2_00" style="height: 24" value="ON" onclick="ckfun(&#39;ck2_00&#39;)" />回校早自习(不上)</td>
+  <input name="ck_ck2_00" type="hidden" id="ck_ck2_00" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck2_01_xs2">
+       <td class="TDB">
+       <table><tr id="ck2_01_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck2_01_xs">
+    <input name="ck2_01" type="checkbox" id="ck2_01" style="height: 24" value="ON" onclick="ckfun(&#39;ck2_01&#39;)" />回校第一节课(不上)</td>
+  <input name="ck_ck2_01" type="hidden" id="ck_ck2_01" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck2_02_xs2">
+       <td class="TDB">
+       <table><tr id="ck2_02_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck2_02_xs">
+    <input name="ck2_02" type="checkbox" id="ck2_02" style="height: 24" value="ON" onclick="ckfun(&#39;ck2_02&#39;)" />回校第二节课(不上)</td>
+  <input name="ck_ck2_02" type="hidden" id="ck_ck2_02" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck2_03_xs2">
+       <td class="TDB">
+       <table><tr id="ck2_03_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck2_03_xs">
+    <input name="ck2_03" type="checkbox" id="ck2_03" style="height: 24" value="ON" onclick="ckfun(&#39;ck2_03&#39;)" />回校第三节课(不上)</td>
+  <input name="ck_ck2_03" type="hidden" id="ck_ck2_03" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck2_04_xs2">
+       <td class="TDB">
+       <table><tr id="ck2_04_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck2_04_xs">
+    <input name="ck2_04" type="checkbox" id="ck2_04" style="height: 24" value="ON" onclick="ckfun(&#39;ck2_04&#39;)" />回校第四节课(不上)</td>
+  <input name="ck_ck2_04" type="hidden" id="ck_ck2_04" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck2_05_xs2">
+       <td class="TDB">
+       <table><tr id="ck2_05_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck2_05_xs">
+    <input name="ck2_05" type="checkbox" id="ck2_05" style="height: 24" value="ON" onclick="ckfun(&#39;ck2_05&#39;)" />回校第五节课(不上)</td>
+  <input name="ck_ck2_05" type="hidden" id="ck_ck2_05" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck2_06_xs2">
+       <td class="TDB">
+       <table><tr id="ck2_06_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck2_06_xs">
+    <input name="ck2_06" type="checkbox" id="ck2_06" style="height: 24" value="ON" onclick="ckfun(&#39;ck2_06&#39;)" />回校第六节课(不上)</td>
+  <input name="ck_ck2_06" type="hidden" id="ck_ck2_06" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck2_07_xs2">
+       <td class="TDB">
+       <table><tr id="ck2_07_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck2_07_xs">
+    <input name="ck2_07" type="checkbox" id="ck2_07" style="height: 24" value="ON" onclick="ckfun(&#39;ck2_07&#39;)" />回校第七节课(不上)</td>
+  <input name="ck_ck2_07" type="hidden" id="ck_ck2_07" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck2_08_xs2">
+       <td class="TDB">
+       <table><tr id="ck2_08_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck2_08_xs">
+    <input name="ck2_08" type="checkbox" id="ck2_08" style="height: 24" value="ON" onclick="ckfun(&#39;ck2_08&#39;)" />回校第八节课(不上)</td>
+  <input name="ck_ck2_08" type="hidden" id="ck_ck2_08" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck2_99_xs2">
+       <td class="TDB">
+       <table><tr id="ck2_99_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck2_99_xs">
+    <input name="ck2_99" type="checkbox" id="ck2_99" style="height: 24" value="ON" onclick="ckfun(&#39;ck2_99&#39;)" />回校晚自习(不上)</td>
+  <input name="ck_ck2_99" type="hidden" id="ck_ck2_99" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="ck2_bgq_xs2">
+       <td class="TDB">
+       <table><tr id="ck2_bgq_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="ck2_bgq_xs">
+    <input name="ck2_bgq" type="checkbox" id="ck2_bgq" style="height: 24" value="ON" onclick="ckfun(&#39;ck2_bgq&#39;)" />回校不归寝</td>
+  <input name="ck_ck2_bgq" type="hidden" id="ck_ck2_bgq" value="false" />
+    </tr>
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="czsj_xs2">
+       <td class="TDB">
+       <table><tr id="czsj_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="czsj_xs">
+    操作时间</td>
+    </tr>
+    <tr>
+    <td id="czsj_sb" class="TDC">
+    申报值:
+    </td>
+    <td>
+    <input name="czsj" type="text" id="czsj" value="2024-5-9 10:46:45" maxlength="21" class="TD1" tabindex="100" style="background-color: #E6E6E6" onkeydown="onkeydown1(&#39;ck2_bgq&#39;,&#39;czsj&#39;,event)" size="21" readonly="readonly" />
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="uname_xs2">
+       <td class="TDB">
+       <table><tr id="uname_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="uname_xs">
+    操作人</td>
+    </tr>
+    <tr>
+    <td id="uname_sb" class="TDC">
+    申报值:
+    </td>
+    <td>
+    <input name="uname" type="text" id="uname" value="王俊豪" maxlength="62" class="TD1" tabindex="100" style="background-color: #E6E6E6" onkeydown="onkeydown1(&#39;czsj&#39;,&#39;uname&#39;,event)" size="30" readonly="readonly" />
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="fdyspyjdm_xs2">
+       <td class="TDB">
+       <table><tr id="fdyspyjdm_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="fdyspyjdm_xs">
+    班主任审批意见</td>
+    </tr>
+    <tr>
+    <td id="fdyspyjdm_sb" class="TDC">
+    状态值:
+    </td>
+    <td>
+    <input name="fdyspyj" type="text" id="fdyspyj" value="同意" maxlength="6" class="TD1" Onchange="tchang1(&#39;fdyspyj&#39;)" style="background-color: #E6E6E6" onkeydown="onkeydown1(&#39;uname&#39;,&#39;fdyspyjdm&#39;,event)" size="8" readonly="readonly" />
+    <span id="fdy">张宁</span>
+    <br><span id="fdyspsj">2024-5-11 11:48:40</span>
+  <input name="fdyspyjdm" type="hidden" id="fdyspyjdm" value="1" />
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="yxspyjdm_xs2">
+       <td class="TDB">
+       <table><tr id="yxspyjdm_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="yxspyjdm_xs">
+    学院审批意见</td>
+    </tr>
+    <tr>
+    <td id="yxspyjdm_sb" class="TDC">
+    状态值:
+    </td>
+    <td>
+    <input name="yxspyj" type="text" id="yxspyj" maxlength="6" class="TD1" Onchange="tchang1(&#39;yxspyj&#39;)" style="background-color: #E6E6E6" onkeydown="onkeydown1(&#39;fdyspyjdm&#39;,&#39;yxspyjdm&#39;,event)" size="8" readonly="readonly" />
+    <span id="yxspr"></span>
+    <br><span id="yxspsj"></span>
+  <input name="yxspyjdm" type="hidden" id="yxspyjdm" />
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="xjspyjdm_xs2">
+       <td class="TDB">
+       <table><tr id="xjspyjdm_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="xjspyjdm_xs">
+    学校审批意见</td>
+    </tr>
+    <tr>
+    <td id="xjspyjdm_sb" class="TDC">
+    状态值:
+    </td>
+    <td>
+    <input name="xjspyj" type="text" id="xjspyj" maxlength="6" class="TD1" Onchange="tchang1(&#39;xjspyj&#39;)" style="background-color: #E6E6E6" onkeydown="onkeydown1(&#39;yxspyjdm&#39;,&#39;xjspyjdm&#39;,event)" size="8" readonly="readonly" />
+    <span id="xjspr"></span>
+    <br><span id="xjspsj"></span>
+  <input name="xjspyjdm" type="hidden" id="xjspyjdm" />
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="sqpzck_xs2">
+       <td class="TDB">
+       <table><tr id="sqpzck_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="sqpzck_xs">
+    <input name="sqpzck" type="checkbox" id="sqpzck" style="height: 24" value="ON" onclick="ckfun(&#39;sqpzck&#39;)" checked="checked" />申请确定批准</td>
+  <input name="ck_sqpzck" type="hidden" id="ck_sqpzck" value="True" />
+    </tr>
+       </td></tr>
+       <tr id="sqpzck_sm"><td></td><td class="TTS">此项是作为申请最终的批准状态
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  <tr id="bz1_bk">
+  <td style="text-align:center" colspan = "2" class="TDP">
+<b>审核不通过可以反馈原因</b>
+  </td>
+  </tr>
+  <tr id="bz1_xs2">
+       <td class="TDB">
+       <table><tr id="bz1_xs1">
+    <td class="TDC">
+    项目:
+    </td>
+    <td id="bz1_xs">
+    备注</td>
+    </tr>
+    <tr>
+    <td id="bz1_sb" class="TDC">
+    申报值:
+    </td>
+    <td>
+    <input name="bz1" type="text" id="bz1" size="22" class="TD1" maxlength="22" onkeydown="onkeydown1(&#39;sqpzck&#39;,&#39;bz1&#39;,event)" />
+    </td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+  </table>
+<br/>
+<table style="width:100%;border:0;border-collapse:collapse">
+  <tr>
+    <td style="width:100%;height:23;vertical-align:bottom;white-space:nowrap;letter-spacing:normal" id="bc_xs">
+
+       <input type="button" onclick="xj()" value="新建" style="width:70;height: 30; color: #0000FF; font-family: SimSun; font-size: 16px; background-color: #FFFFCA"/> &nbsp;
+<input onclick="bcxs(); __doPostBack('dcbc','')" name="dcbc" type="button" id="dcbc" value="增加记录" style="width:106;height: 30; color: #0000FF; font-family: SimSun; font-size: 16px; background-color: #FFFFCA" />
+
+<br/><span id="MESSAGE" maintainstate="false" style="font-family: arial;font-size: 9pt;color:red"></span>
+    </td>
+  </tr>
+    <tr><td style="text-align:center"><br/><img alt="" onclick="cksyb()" src="/imagesal/syb.gif"/><br></td></tr>
+  <tr>
+    <td style="width:100%;height:23;vertical-align:bottom">
+        <br/><input type="button" onclick="fhsy()"  value="<<回首页" style="width:100;height: 30; color: #0000FF; font-family: SimSun; font-size: 16px; background-color: #FFFFCA"/>
+    </td>
+  </tr>
+  <tr><td style="vertical-align:top">
+    <table id="dylist" style="border:0;border-collapse:collapse">
+    
+     <tr>
+ 	   <td>
+     </td>
+     </tr>
+    
+    </table>
+  </td></tr>
+  <tr><td><iframe name="r_3_5" id="r_3_5" src="" width="0" height="0" style="border:0;border-collapse:collapse"></iframe></td></tr>
+  <tr>
+    <td>
+    <iframe name="download" id="download" src="" width="0" height="0" style="border:0;border-collapse:collapse"></iframe>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <iframe name="print_t" id="print_t" src="" width="0" height="0" style="border:0;border-collapse:collapse"></iframe>
+    </td>
+  </tr>
+  <tr>
+    <td style="height:100">
+    </td>
+  </tr>
+</table> 
+</td> 
+</tr> 
+</table> 
+
+</div>
+<div id="div_fh" style="text-align:center">
+ <table style="width:100%;height:70;border:0;border-collapse:collapse">
+ <tr>
+    <td style="width:100%;height:40;vertical-align:bottom">
+        <input type="button" onclick="fjtc()"  value="<<返回" style="height: 30;width:90; color: #0000FF; font-family: SimSun; font-size: 16px; background-color: #FFFFCA"/>
+    </td>
+ </tr>
+ </table>
+</div>
+<div id="div_xzdm" style="text-align:center">
+ <table style="width:100%;border:0;border-collapse:collapse">
+     <tr>
+     <td>
+     <iframe onload="style.height=parent.document.body.scrollHeight+30" id="r_xzdm" name="r_xzdm" src="" width="100%" height="100%" style="border:0;border-collapse:collapse" frameborder="0"></iframe>
+     </td>
+     </tr>
+ </table>       
+</div>
+  <input type="hidden" id="km" value="st_xsqj"/>
+  <input type="hidden" id="y_km" value="st_xsqj"/>
+  <input type="hidden" id="pzd" value="qjqxdm,qjsj,jtsj_time,qjsydm,qjjtyy,wcmddm,fjm,ck_00,ck_01,ck_02,ck_03,ck_04,ck_05,ck_06,ck_07,ck_08,ck_99,ck_bgq,nhxsj,hxjt_time,qjts,ck2_00,ck2_01,ck2_02,ck2_03,ck2_04,ck2_05,ck2_06,ck2_07,ck2_08,ck2_99,ck2_bgq,czsj,uname,fdyspyjdm,fdy,fdyspsj,yxspyjdm,yxspr,yxspsj,xjspyjdm,xjspr,xjspsj,sqpzck,bz1"/>
+  <input type="hidden" id="pzd_c" value="ck_00,ck_01,ck_02,ck_03,ck_04,ck_05,ck_06,ck_07,ck_08,ck_99,ck_bgq,ck2_00,ck2_01,ck2_02,ck2_03,ck2_04,ck2_05,ck2_06,ck2_07,ck2_08,ck2_99,ck2_bgq,sqpzck,"/>
+  <input name="pzd_lock" type="hidden" id="pzd_lock" value="sqpzck,bz1,fjm,uname,fdyspyjdm,fdy,fdyspsj,yxspyjdm,yxspr,yxspsj,xjspyjdm,xjspr,xjspsj,qjsj,fdyspyjdm,fdy,yxspyjdm,yxspr,qjqxdm,jtsj_time,qjsj,fdyspyjdm,fdy,yxspyjdm,yxspr,qjqxdm,jtsj_time,qjsj,fdyspyjdm,fdy,yxspyjdm,yxspr,qjqxdm,jtsj_time," />
+  <input name="pzd_lock2" type="hidden" id="pzd_lock2" />
+  <input name="pzd_lock3" type="hidden" id="pzd_lock3" />
+  <input name="pzd_lock4" type="hidden" id="pzd_lock4" />
+  <input name="pzd_lock5" type="hidden" id="pzd_lock5" value="qjsj,fdyspyjdm,fdy,yxspyjdm,yxspr,qjqxdm,jtsj_time," />
+  <input name="pzd_y" type="hidden" id="pzd_y" />
+  <input name="xdm" type="hidden" id="xdm" value="009" />
+  <input name="bjhm" type="hidden" id="bjhm" value="消防23191" />
+  <input name="xh" type="hidden" id="xh" value="230119131" />
+  <input name="xm" type="hidden" id="xm" value=陈亭宇" />
+  <input name="qx_r" type="hidden" id="qx_r" value="1" />
+  <input name="qx_i" type="hidden" id="qx_i" value="1" />
+  <input name="qx_u" type="hidden" id="qx_u" value="1" />
+  <input name="qx_d" type="hidden" id="qx_d" value="0" />
+  <input name="qx2_r" type="hidden" id="qx2_r" />
+  <input name="qx2_i" type="hidden" id="qx2_i" />
+  <input name="qx2_u" type="hidden" id="qx2_u" />
+  <input name="qx2_d" type="hidden" id="qx2_d" />
+  <input name="databcxs" type="hidden" id="databcxs" />
+  <input name="databcdel" type="hidden" id="databcdel" />
+  <input name="xzbz" type="hidden" id="xzbz" />
+  <input name="pkey" type="hidden" id="pkey" value="2024-4-19" />
+  <input name="pkey4" type="hidden" id="pkey4" />
+  <input name="xs_bj" type="hidden" id="xs_bj" />
+  <input name="bdbz" type="hidden" id="bdbz" />
+  <input name="dcbz" type="hidden" id="dcbz" value="1" />
+  <input name="cw" type="hidden" id="cw" />
+  <input name="hjzd" type="hidden" id="hjzd" value=",NHXSJ,QJSJ,QJTS," />
+  <input name="xqbz" type="hidden" id="xqbz" value="1" />
+  <input name="ndbz" type="hidden" id="ndbz" />
+  <input name="st_xq" type="hidden" id="st_xq" value="2023-2024-2" />
+  <input name="st_nd" type="hidden" id="st_nd" />
+  <input name="mc" type="hidden" id="mc" />
+  <input name="smbz" type="hidden" id="smbz" value="2" />
+  <input name="fjmf" type="hidden" id="fjmf" />
+  <input name="psrc" type="hidden" id="psrc" />
+  <input name="pa" type="hidden" id="pa" />
+  <input name="pb" type="hidden" id="pb" />
+  <input name="pc" type="hidden" id="pc" />
+  <input name="pd" type="hidden" id="pd" />
+  <input name="pe" type="hidden" id="pe" />
+  <input name="pf" type="hidden" id="pf" />
+  <input name="pg" type="hidden" id="pg" />
+  <input name="msie" type="hidden" id="msie" />
+  <input type="hidden" id="tdwj" value=""/>
+  <input type="hidden" id="dyfs" value=""/>
+  <input type="hidden" id="bds_z" value=""/>
+  <input type="hidden" id="dy_yl" value="1"/>
+  <input name="tkey" type="hidden" id="tkey" value="qjsj" />
+  <input name="tkey4" type="hidden" id="tkey4" />
+  <input name="pczsj" type="hidden" id="pczsj" />
+      <input type="hidden" id="xp_pmc"/>
+      <input type="hidden" id="xp_pval"/>
+      <input type="hidden" id="xp_plx"/>
+      <input type="hidden" id="xp_pkm"/>
+      <input type="hidden" id="xp_pzd"/>
+      <input type="hidden" id="xp_pjxjdm"/>
+      <input type="hidden" id="xp_ipbz"/>
+      <input type="hidden" id="xp_pjxjdm2"/>
+      <input type="hidden" id="xp_lqzydm"/>
+  <input name="jjzt" type="hidden" id="jjzt" />
+  <input name="lszt" type="hidden" id="lszt" value="1" />
+  <input name="bczt" type="hidden" id="bczt" value="1" />
+  <input name="colordm" type="hidden" id="colordm" />
+      <input type="hidden" id="mobbz" value="1"/>
+      <input type="hidden" id="scrtop" value=""/>
+  <input name="xqndbz" type="hidden" id="xqndbz" />
+</form>
+</body>
+</html>
