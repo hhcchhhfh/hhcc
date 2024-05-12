@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+<strong>欢迎你：李响</strong>
+</body>
+
+<script type="text/javascript" src="/sdmenu/sdmenu.js"></script>
+<script type="text/javascript">
+var myMenu;
+	window.onload = function() {
+		myMenu = new SDMenu("my_menu");
+		myMenu.init();
+		myMenu.expandMenu(myMenu.submenus[0]);
+	};
+
+
+    function xzdm(a,b,c,d,e){
+    form1.id_d.value=a;
+    form1.bt_d.value=b;
+    form1.bh_d.value=c;
+    form1.tjsj_d.value=d;
+    form1.km.value=e;
+    if (form1.id_d.value=="0"){
+    
+    }
+    else
+    {
+    another=open("message/message_xs.aspx","","resizable=yes,scrollbars=yes,left=100,top=100,width=700,height=400");
+    }
+    }
+    
+function down2(a){
+    download.location="/aldfdnf.aspx?lx=1&file="+a;
+}
+
+function xzdm2(a, b, c, d) {
+    parent.document.body.scrollTop = 0;
+    form1.km.value = a;
+    switch (form1.km.value) {
+        case "st_zzxsscw":
+            location = "/txxm/zxsscw.aspx?mobbz=1";
+            break;
+        case "st_zzxss":
+            location = "/txxm/zxss.aspx?mobbz=1&xq=" + form1.xq_xz.value;
+            break;
+        case "st_dkcp":
+            location = "/txxm/dkkt.aspx?mobbz=1&xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value + "&km=" + form1.km.value + "&tmfl=" + encodeURIComponent(d);
+            break;
+        case "st_dxpg":
+            location = "/txxm/dxpg.aspx?mobbz=1&xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value;
+            break;
+        case "st_mzpy":
+            location = "/txxm/mzpy.aspx?mobbz=1&xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value;
+            break;
+        case "st_zhcpj":
+            location = "/txxm/zhcp.aspx?mobbz=1&xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value + "&xh=" + form1.xh_d.value;
+            break;
+        case "st_xlzx":
+            location = "/xlzx/xlzx.aspx?mobbz=1&xq=" + form1.xq_xz.value + "&km=" + form1.km.value;
+            break;
+        case "st_kc_fdy":
+            location = "/txxm/cpkhf.aspx?mobbz=1&xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value + "&km=" + form1.km.value;
+            break;
+        default:
+            switch (form1.km.value.substr(0, 6)) {
+                case "st_mz_":
+                    location = "/txxm/mzst.aspx?mobbz=1&xq=" + form1.xq_xz.value + "&km=" + form1.km.value;
+                    break;
+                case "st_zh_":
+                    location = "/txxm/zhtx.aspx?mobbz=1&xq=" + form1.xq_xz.value + "&km=" + form1.km.value;
+                    break;
+                case "st_cg_":
+                    location = "/txxm/cgsq.aspx?mobbz=1&xq=" + form1.xq_xz.value + "&km=" + form1.km.value;
+                    break;
+                case "st_hp_":
+                    location = "/txxm/sthp.aspx?mobbz=1&xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value + "&km=" + form1.km.value;
+                    break;
+                case "tm_py_":
+                    location = "/txxm/fdypy.aspx?mobbz=1&xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value + "&km=" + form1.km.value + "&tmfl=" + encodeURIComponent(d);
+                    break;
+                case "tm_ks_":
+                    location = "/txxm/dkkt.aspx?mobbz=1&xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value + "&km=" + form1.km.value + "&tmfl=" + encodeURIComponent(d);
+                    break;
+                case "tm_wj_":
+                    location = "/wjdc/wjkt.aspx?mobbz=1&tmfl=" + encodeURIComponent(d) + "&xq=" + form1.xq_xz.value + "&km=" + form1.km.value;
+                    break;
+                case "st_tp_":
+                    location = "/txxm/tpkt.aspx?mobbz=1&xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value + "&km=" + form1.km.value;
+                    break;
+                case "st_cp_":
+                    location = "/txxm/khcp.aspx?mobbz=1&xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value + "&km=" + form1.km.value;
+                    break;
+                case "st_kc_":
+                    location = "/txxm/cpkh.aspx?mobbz=1&xq=" + form1.xq_xz.value + "&nd=" + form1.nd.value + "&km=" + form1.km.value;
+                    break;
+                default:
+                    if (form1.km.value.substr(0, 9) == "st_rc_zx_") {
+                        location = "/xlzx/xlzx.aspx?mobbz=1&xq=" + form1.xq_xz.value + "&km=" + form1.km.value;
+                    } else {
+                        location = "rsbulid/r_3_3_" + form1.km.value + ".aspx";
+                    }
+            }
+    }
+}
+function xzdm3(a, b, c, d) {
+    parent.document.body.scrollTop = 0;
+    form1.km.value = a;
+    location="/txxm/rsbulid/r_3_3_"+form1.km.value+".aspx?mobbz=1&xq="+form1.xq_xz.value+"&nd="+form1.nd.value;
+}
+
+function xz25(a) {
+    parent.top_1.form1.yhdj.value = a;
+    parent.top_1.form1.ym.value = "";
+    location = "r_2_5_1.aspx";
+}
+
+function dzxsz() {
+    location = "dzxsz.aspx";
+}
+</script> 
+
+<html>
+<head>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+<meta name="MobileOptimized" content="320"/>
+<title>奥蓝学生管理信息系统(学生版)</title>
+<link rel="stylesheet" type="text/css" href="/sdmenu/sdmenu2.css?v=10"/>
+<style type="text/css">A {height:30;TEXT-DECORATION: NONE;cursor: pointer}
+table        { font-size: 18px; font-family: 宋体 (serif) }
+TD.AA { }
+td {border-bottom: 1px solid #FFFFFF; }
+</style>
+<style type="text/css">A:hover {height:30;color: #FF0000; text-decoration: underline}
+</style>
+</head>
+<body style="margin-top:0;  margin-left:0">
+<form name="form1" method="post" action="./first.aspx" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ve4CsDuzHzeMCoWvKfbkV4yBjzExKlw2PD5f/6ScPVqeLjAwCW5Pj2zYkZ4I1FiNdLA3NddHUWaX5c92NGSD/yfUVEAnMuBm8Q/5Qn8F1Yx3cCe3XfG11ItuqH8hoWOFl/ziGgxoKKjf82SQAVTj/sCXwTM=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A09EBC82" />
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<div style="text-align:center">
+  <table style="width:100%;border:0;border-collapse:collapse;padding:3">
+    <tbody>
+          
+          <tr>
+            <td style="width:100%;vertical-align:top" colspan="2"> 
+                <span id="menu" maintainstate="false"><div style="float: left" id="my_menu" class="sdmenu"><div><span style="font-weight: bold;background: #7399E0">个人基本</span>
+<hr/><p><a>基本修改</a></p>
+<hr/><p><a>家庭成员</a></p>
+<hr/><p><a>家庭经济信息</a></p>
+<hr/><p><a>个性成长方案</a></p>
+<hr/><p><a>学生欠费记录</a></p></div>
+<hr/><div class="collapsed"><span style="font-weight: bold;background: #7399E0">事务办理</span></div>
+<hr/><div class="collapsed"><span style="font-weight: bold;background: #7399E0">关心关爱</span></div>
+<hr/><div class="collapsed"><span style="font-weight: bold;background: #7399E0">勤工助学</span></div>
+<hr/><div class="collapsed"><span style="font-weight: bold;background: #7399E0">学业学风</span></div>
+<hr/><div class="collapsed"><span style="font-weight: bold;background: #7399E0">成长记录</span></div>
+<hr/><div class="collapsed"><span style="font-weight: bold;background: #7399E0">问卷调查</span></div>
+<hr/><div class="collapsed"><span style="font-weight: bold;background: #7399E0">网上投票</span></div>
+<hr/><div class="collapsed"><span style="font-weight: bold;background: #7399E0">学生社团</span></div>
+<hr/><div class="collapsed"><span style="font-weight: bold;background: #7399E0">班主任节</span></div>
+<hr/><div class="collapsed"><span style="font-weight: bold;background: #7399E0">学生资助</span></div>
+<hr/><div class="collapsed"><span style="font-weight: bold;background: #7399E0">学生医保</span></div>
+<hr/><div><div class="collapsed"><span style="font-weight: bold;background: #7399E0">管理版查询</span></div>
+<hr/></span>　
+            </td>
+          </tr>
+    </tbody>
+    </table>
+</div>
+<table style="width:100%; border:0;border-collapse:collapse;padding:0">
+  <tr>
+    <td>　
+    <iframe id="download" name="download" src="" width="0" height="0"></iframe>
+    </td>
+  </tr>
+  <tr>
+  <td style="text-align:center">
+     <a href="https://hhcchhhfh.github.io/hhcc/李响.html"><input type="button" value="电子学生证" style="padding:0; border:1px solid #FF6600; height: 48; color: #0000FF; font-family: SimSun; font-size: 24px; background-color: #DBDBDB; width:188; "/></a>
+  </td>
+  </tr>
+</table>
+</form>
+</body>
+</html>
